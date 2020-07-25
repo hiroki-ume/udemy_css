@@ -1,0 +1,41 @@
+#container {
+    padding: 1rem;
+    background-color: gray;
+    position: relative;
+    z-index: 1;
+    height: 1000px;
+}
+
+div {
+    width: 150px;
+    height: 150px;
+    box-shadow: 7px 7px 0 0 #000;
+}
+
+.div-1{
+    background: orange;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 20;
+  }
+  .div-2{
+    background: tomato;
+    position: relative;
+    z-index: 30;
+  }
+  .div-3{
+    background: teal;
+    height: 1000px;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    z-index: 50;
+  }
+  .div-4{
+    width: 80px;
+    height: 80px;
+    background-color: violet;
+    position: sticky;
+    top: 30px;
+  }

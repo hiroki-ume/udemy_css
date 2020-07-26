@@ -1,0 +1,61 @@
+#container {
+  text-align: center;
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-perspective: 300px;
+          perspective: 300px;
+  width: 150px;
+  height: 50px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.cubic span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  cursor: pointer;
+  line-height: 48px;
+}
+
+.cubic .hovering {
+  background-color: black;
+  color: white;
+  -webkit-transform: rotateX(90deg);
+          transform: rotateX(90deg);
+  -webkit-transform-origin: center center -25px;
+          transform-origin: center center -25px;
+}
+
+.cubic .deault {
+  background-color: white;
+  color: black;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transform-origin: center center -25px;
+          transform-origin: center center -25px;
+}
+
+.cubic:hover {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.cubic:hover .hovering {
+  -webkit-transform: rotateX(0);
+          transform: rotateX(0);
+}
+
+.cubic:hover .default {
+  -webkit-transform: rotateX(-90deg);
+          transform: rotateX(-90deg);
+}
+/*# sourceMappingURL=style.css.map */

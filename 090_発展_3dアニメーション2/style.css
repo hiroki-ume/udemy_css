@@ -24,6 +24,8 @@
   border: 1px solid black;
   cursor: pointer;
   line-height: 48px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .cubic .hovering {
@@ -35,18 +37,13 @@
           transform-origin: center center -25px;
 }
 
-.cubic .deault {
+.cubic .default {
   background-color: white;
   color: black;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+  -webkit-transform: rotateX(0);
+          transform: rotateX(0);
   -webkit-transform-origin: center center -25px;
           transform-origin: center center -25px;
-}
-
-.cubic:hover {
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
 }
 
 .cubic:hover .hovering {

@@ -28,6 +28,8 @@ $cWhite: white;
         border: 1px solid $cBlack;
         cursor: pointer;
         line-height: 48px;
+        transition: all 0.3s;
+
     }
 
     & .hovering {
@@ -37,16 +39,14 @@ $cWhite: white;
         transform-origin: center center -25px;
     }
 
-    & .deault {
+    & .default {
         background-color: white;
         color: $cBlack;
-        transform: translateX(0);
+        transform: rotateX(0);
         transform-origin: center center -25px;
     }
 
     &:hover {
-        transition: all 0.3s;
-
 
         & .hovering {
             transform: rotateX(0);
